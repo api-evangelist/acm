@@ -1,0 +1,135 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+provider: ACM Digital Library
+providerId: acm
+created: '2026-06-13'
+modified: '2026-06-13'
+tags:
+  - Academic
+  - Bibliographic Records
+  - Citations
+  - Computing
+  - Conference Proceedings
+  - DOI
+  - Digital Library
+  - Journals
+  - Metadata
+  - Open Access
+  - Publications
+  - Research
+  - Scholarly
+description: >-
+  Plans and pricing for ACM Digital Library access. As of January 2026, ACM is fully open access, offering
+  a free Basic tier with public access to its complete corpus of computing research. A Premium subscription
+  tier provides advanced research tools including AI-assisted search, bulk downloads, citation analytics,
+  and institutional collaboration features. Institutional pricing (Academic, Government, Corporate) varies
+  by tier based on publishing activity, annual revenue, or staff count.
+plans:
+  - id: acm-basic
+    name: Basic (Open Access)
+    type: free
+    description: >-
+      Free public access to ACM's complete corpus of published computing research. Available to all users
+      without registration as of January 2026 when ACM became fully open access. Provides article abstracts,
+      bibliographic metadata, and full-text access to open-access articles. Does not include the ACM Guide
+      to Computing Literature, AI-assisted search, bulk downloads, or advanced analytics.
+    entries:
+      - label: Article Access
+        description: Access to open-access ACM publications and bibliographic metadata
+        name: article_access
+        type: quota
+        metric: articles
+        limit: unlimited
+        timeFrame: month
+        geo: global
+        domains:
+          - https://dl.acm.org
+        unit: 1
+        price: '0.00'
+        userMultiplied: false
+      - label: Citation Export
+        description: Export citations in BibTeX, EndNote, or ACM Ref format
+        name: citation_export
+        type: quota
+        metric: exports
+        limit: unlimited
+        timeFrame: month
+        geo: global
+        domains:
+          - https://dl.acm.org
+        unit: 1
+        price: '0.00'
+        userMultiplied: false
+    elements:
+      - type: FeatureList
+        value:
+          - Full-text open-access articles
+          - Bibliographic metadata search
+          - Citation export (BibTeX, EndNote, ACM Ref)
+          - DOI-based content retrieval
+          - Basic article search
+
+  - id: acm-premium
+    name: Digital Library Premium
+    type: paid
+    description: >-
+      Premium institutional subscription providing full access to the ACM Digital Library plus advanced
+      research tools. Includes AI-assisted search, citation tools, research analytics, bulk downloads,
+      saved searches, alerts, personalized recommendations, collaboration features, and full integration
+      with institutional profiles. Automatically included with ACM Open (Read and Publish) institutional
+      subscriptions.
+    entries:
+      - label: Academic Tier 1
+        description: Institutions publishing 75+ articles annually
+        name: academic_tier_1
+        type: flat
+        metric: annual_subscription
+        limit: 1
+        timeFrame: year
+        geo: global
+        domains:
+          - https://dl.acm.org
+        unit: 1
+        price: '95000.00'
+        userMultiplied: false
+      - label: Academic Tier 10
+        description: Institutions publishing 0-3 articles annually
+        name: academic_tier_10
+        type: flat
+        metric: annual_subscription
+        limit: 1
+        timeFrame: year
+        geo: global
+        domains:
+          - https://dl.acm.org
+        unit: 1
+        price: '6000.00'
+        userMultiplied: false
+      - label: Government Single Site License
+        description: 2025 list price for government institutions (single site)
+        name: government_site_license
+        type: flat
+        metric: annual_subscription
+        limit: 1
+        timeFrame: year
+        geo: global
+        domains:
+          - https://dl.acm.org
+        unit: 1
+        price: '30675.00'
+        userMultiplied: false
+    elements:
+      - type: FeatureList
+        value:
+          - Full ACM Digital Library corpus
+          - ACM Guide to Computing Literature
+          - AI-assisted search and discovery
+          - Bulk downloads
+          - Citation tools and analytics
+          - Research impact metrics (Altmetric, citation trends)
+          - Saved searches and email alerts
+          - Personalized recommendations
+          - Institutional profile integration
+          - Collaboration features
+          - Text and data mining (research/educational use)

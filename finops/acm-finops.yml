@@ -1,0 +1,153 @@
+specification: FinOps Framework
+specificationVersion: '1.0'
+alignedWith:
+  framework: FinOps Foundation Framework
+  frameworkUrl: https://www.finops.org/framework/
+  dataSpec: FOCUS
+  dataSpecVersion: '1.3'
+  dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
+provider: ACM Digital Library
+providerId: acm
+publisherName: Association for Computing Machinery
+serviceCategory: API
+created: '2026-06-13'
+modified: '2026-06-13'
+tags:
+  - Academic
+  - Bibliographic Records
+  - Citations
+  - Computing
+  - Conference Proceedings
+  - DOI
+  - Digital Library
+  - Journals
+  - Metadata
+  - Open Access
+  - Publications
+  - Research
+  - Scholarly
+  - FinOps
+  - Cost Management
+  - FOCUS
+description: >-
+  FinOps framework definition for the ACM Digital Library. Provides a FOCUS-aligned mapping for cost
+  allocation, usage measurement, and unit-economics reporting for institutional subscribers. As of January
+  2026, basic access to ACM's corpus is free and open, while Premium subscriptions carry tiered institutional
+  pricing based on publishing activity (academic), annual revenue and staff (corporate), or site licenses
+  (government). Cost management focuses on subscription tier selection, access scope alignment, and
+  maximizing value from Premium analytics and bulk download entitlements.
+principles:
+  - name: Visibility
+    description: >-
+      Make ACM Digital Library subscription costs visible to library, research, and finance teams,
+      including chargebacks to departments or research groups that consume Premium features.
+  - name: Allocation
+    description: >-
+      Allocate subscription costs across consuming departments, research groups, and projects based on
+      usage of Premium features such as bulk downloads, analytics, and citation tools.
+  - name: Optimization
+    description: >-
+      Evaluate whether Premium tier benefits (AI search, bulk download, analytics) justify institutional
+      cost versus Basic (free) access. Assess publishing activity tier accuracy for academic pricing.
+  - name: Accountability
+    description: >-
+      Establish budget ownership for library or IT departments managing the subscription and provide
+      showback reporting to research stakeholders.
+domains:
+  - name: Understand Usage and Cost
+    capabilities:
+      - Data Ingestion
+      - Allocation
+      - Reporting and Analytics
+      - Anomaly Management
+  - name: Quantify Business Value
+    capabilities:
+      - Planning and Estimating
+      - Forecasting
+      - Budgeting
+      - Benchmarking
+  - name: Optimize Usage and Cost
+    capabilities:
+      - Rate Optimization
+      - Workload Optimization
+      - License and Subscription Management
+services:
+  - name: ACM Digital Library Basic
+    serviceCategory: Digital Library
+    chargeType: free
+    description: Free open-access tier providing public access to ACM's complete computing research corpus.
+    unitOfMeasure: access
+    listUnitPrice: 0.00
+    currency: USD
+
+  - name: ACM Digital Library Premium - Academic
+    serviceCategory: Digital Library
+    chargeType: subscription
+    description: >-
+      Annual institutional subscription for academic organizations. Pricing is tiered by annual ACM
+      publishing activity from Tier 1 ($95,000/yr, 75+ articles) to Tier 10 ($6,000/yr, 0-3 articles).
+    unitOfMeasure: annual-site-license
+    listUnitPrice: 6000.00
+    currency: USD
+    priceRangeMax: 95000.00
+    billingCycle: annual
+    tags:
+      - Academic
+      - Institutional
+
+  - name: ACM Digital Library Premium - Government
+    serviceCategory: Digital Library
+    chargeType: subscription
+    description: >-
+      Annual single-site license for government institutions. 2025 list price is $30,675 USD per site.
+    unitOfMeasure: annual-site-license
+    listUnitPrice: 30675.00
+    currency: USD
+    billingCycle: annual
+    tags:
+      - Government
+      - Institutional
+
+  - name: ACM Digital Library Premium - Corporate
+    serviceCategory: Digital Library
+    chargeType: subscription
+    description: >-
+      Annual subscription for corporate organizations. Pricing is based on annual revenue and total
+      staff size. Contact ACM Libraries for a custom quote.
+    unitOfMeasure: annual-site-license
+    listUnitPrice: 0.00
+    currency: USD
+    billingCycle: annual
+    tags:
+      - Corporate
+      - Institutional
+      - Custom Pricing
+
+costDrivers:
+  - name: Subscription Tier
+    description: >-
+      Academic institutions are placed in pricing tiers based on their historical ACM publishing activity.
+      Ensuring accurate tier classification is the primary cost lever for academic subscribers.
+    type: tier-selection
+    impact: high
+
+  - name: Premium vs Basic Access
+    description: >-
+      Since January 2026, Basic access is free. Institutions should evaluate whether Premium features
+      (AI search, bulk download, analytics) are needed versus leveraging free Basic access.
+    type: tier-optimization
+    impact: high
+
+  - name: Site License Scope
+    description: >-
+      Government and corporate pricing is scoped to single site licenses. Multi-site organizations
+      should negotiate volume discounts with ACM Libraries.
+    type: volume-optimization
+    impact: medium
+
+  - name: ACM Open Bundling
+    description: >-
+      Institutions subscribing to ACM Open (Read and Publish) automatically receive Premium Digital
+      Library access. Bundling may reduce net cost compared to separate subscriptions.
+    type: bundling
+    impact: medium

@@ -1,0 +1,87 @@
+specification: API Commons Rate Limits
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/RateLimits
+provider: ACM Digital Library
+providerId: acm
+created: '2026-06-13'
+modified: '2026-06-13'
+tags:
+  - Academic
+  - Bibliographic Records
+  - Citations
+  - Computing
+  - Conference Proceedings
+  - DOI
+  - Digital Library
+  - Journals
+  - Metadata
+  - Open Access
+  - Publications
+  - Research
+  - Scholarly
+  - Rate Limiting
+  - Quotas
+  - Throttling
+description: >-
+  Rate limit definitions for the ACM Digital Library web endpoints. ACM does not publish explicit rate limit
+  thresholds for its search and content retrieval endpoints. Access is controlled through institutional IP
+  authentication or individual account login. Automated or parallel access attempts may result in temporary
+  IP blocks. Text and data mining is permitted for research and educational purposes but not for commercial
+  use per ACM's terms. Premium subscribers have access to bulk download capabilities with enhanced throughput.
+headers:
+  limit: X-RateLimit-Limit
+  remaining: X-RateLimit-Remaining
+  reset: X-RateLimit-Reset
+  retryAfter: Retry-After
+responseCodes:
+  throttled: 429
+  quotaExceeded: 429
+  serviceUnavailable: 503
+limits:
+  - tier: basic
+    name: Basic Tier Search Rate
+    scope: ip-address
+    metric: requests_per_minute
+    limit: 10
+    burst: 20
+    timeFrame: minute
+    applies:
+      - ACM Digital Library Search API
+      - ACM Digital Library Content Retrieval API
+    notes: >-
+      ACM does not publish explicit rate limits. Estimated conservative limits based on observed behavior;
+      aggressive parallel requests may result in temporary IP blocks. Sequential, polite access is recommended.
+
+  - tier: basic
+    name: Basic Tier Citation Export Rate
+    scope: ip-address
+    metric: requests_per_minute
+    limit: 5
+    burst: 10
+    timeFrame: minute
+    applies:
+      - ACM Digital Library Citation Export API
+    notes: >-
+      Citation export requests should be throttled to avoid triggering automated access protections.
+
+  - tier: premium
+    name: Premium Tier Bulk Download
+    scope: account
+    metric: requests_per_minute
+    limit: 60
+    burst: 100
+    timeFrame: minute
+    applies:
+      - ACM Digital Library Search API
+      - ACM Digital Library Content Retrieval API
+      - ACM Digital Library Citation Export API
+    notes: >-
+      Premium institutional subscribers have access to bulk download capabilities. Actual limits are
+      subject to negotiated terms and ACM's terms of service for text and data mining.
+
+notes:
+  - ACM Digital Library does not expose a formal developer API with documented rate limit headers.
+  - Rate limits above are estimated from observed platform behavior and community reports.
+  - Text and data mining is permitted for research and educational purposes, not commercial use.
+  - Contact dl-team@hq.acm.org for programmatic access inquiries.
+  - Parallel scraping or crawling may result in temporary IP-level blocking.

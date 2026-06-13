@@ -1,0 +1,150 @@
+aid: acm
+name: ACM Digital Library
+kind: company
+description: >-
+  The ACM Digital Library is the world's most comprehensive collection of full-text articles and bibliographic
+  literature covering computing and information technology. Published by the Association for Computing Machinery
+  (ACM), it provides access to journals, conference proceedings, magazines, newsletters, and technical reports
+  spanning the complete history of ACM publications. As of January 2026, the ACM Digital Library is fully open
+  access, offering free basic access to its entire corpus of computing research. Programmatic access is
+  available through web-based search endpoints, DOI-based content retrieval, citation export (BibTeX, EndNoteL,
+  ACM Ref), and Premium tier bulk download and research analytics capabilities. The library also provides the
+  ACM Guide to Computing Literature, a comprehensive bibliographic database extending beyond ACM publications
+  to cover the broader computing literature.
+url: https://raw.githubusercontent.com/api-evangelist/acm/refs/heads/main/apis.yml
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Academic
+  - Bibliographic Records
+  - Citations
+  - Computing
+  - Conference Proceedings
+  - DOI
+  - Digital Library
+  - Journals
+  - Metadata
+  - Open Access
+  - Publications
+  - Research
+  - Scholarly
+created: '2026-06-13'
+modified: '2026-06-13'
+specificationVersion: '0.19'
+type: Index
+access: Public
+position: Provider
+apis:
+  - aid: acm:acm-search-api
+    name: ACM Digital Library Search API
+    description: >-
+      The ACM Digital Library search endpoint allows programmatic querying of computing literature across ACM's
+      full publication corpus. Queries are issued against the doSearch action endpoint with parameters for
+      full-text search terms, pagination (startPage, pageSize), and scope expansion. The endpoint returns
+      HTML responses reflecting search results and supports access to ACM conference proceedings, journals,
+      magazines, and the broader ACM Guide to Computing Literature. Institutional or ACM member authentication
+      unlocks access to full-text content beyond open-access articles.
+    humanURL: https://dl.acm.org/search/
+    baseURL: https://dl.acm.org
+    properties:
+      - type: Documentation
+        url: https://dl.acm.org/search/
+      - type: Authentication
+        url: https://libraries.acm.org/subscriptions-access/authentication
+    tags:
+      - Bibliographic Records
+      - Computing
+      - Conference Proceedings
+      - Full-Text Search
+      - Journals
+      - Metadata
+      - Publications
+      - Research
+      - Search
+
+  - aid: acm:acm-content-retrieval-api
+    name: ACM Digital Library Content Retrieval API
+    description: >-
+      Individual publications, conference papers, and journal articles in the ACM Digital Library are
+      accessible via persistent DOI-based URLs at dl.acm.org/doi/{doi}. ACM maintains DOI registration
+      through CrossRef and operates its own DOI resolution service. As of January 2026, all ACM-published
+      content is open access, making bibliographic metadata and many full-text articles freely available.
+      The endpoint supports retrieval of article abstracts, author information, affiliation data, citation
+      counts, and full-text PDF downloads where permitted.
+    humanURL: https://dl.acm.org/
+    baseURL: https://dl.acm.org
+    properties:
+      - type: Documentation
+        url: https://libraries.acm.org/digital-library/platform-and-features
+      - type: OpenAccess
+        url: https://dl.acm.org/openaccess
+      - type: Authentication
+        url: https://libraries.acm.org/subscriptions-access/authentication
+    tags:
+      - Articles
+      - Content
+      - DOI
+      - Full-Text
+      - Metadata
+      - Open Access
+      - Publications
+      - Retrieval
+
+  - aid: acm:acm-citation-export-api
+    name: ACM Digital Library Citation Export API
+    description: >-
+      The ACM Digital Library provides citation export functionality supporting BibTeX, EndNote, and ACM
+      Reference format downloads for individual articles and bulk search result sets. Users can export
+      individual citations from article pages or export all results from a search query. The export
+      interface is accessible through the web UI and supports selecting individual items or all search
+      results. BibTeX exports are compatible with reference managers including Mendeley and Zotero.
+      Premium subscribers have access to enhanced citation tools and bulk export capabilities.
+    humanURL: https://libraries.acm.org/training-resources/new-dl-features/citation-functions
+    baseURL: https://dl.acm.org
+    properties:
+      - type: Documentation
+        url: https://libraries.acm.org/training-resources/new-dl-features/citation-functions
+      - type: ExportGuide
+        url: https://libraries.acm.org/training-resources/new-dl-features/exporting-citations
+    tags:
+      - BibTeX
+      - Citations
+      - EndNote
+      - Export
+      - Metadata
+      - Reference Management
+      - Scholarly
+
+common:
+  - type: Website
+    url: https://dl.acm.org/
+  - type: Documentation
+    url: https://libraries.acm.org/digital-library/platform-and-features
+  - type: Authentication
+    url: https://libraries.acm.org/subscriptions-access/authentication
+  - type: Pricing
+    url: https://libraries.acm.org/subscriptions-access
+  - type: CorporatePricing
+    url: https://libraries.acm.org/subscriptions-access/corporate-pricing
+  - type: GovernmentPricing
+    url: https://libraries.acm.org/subscriptions-access/government/dl-pricing
+  - type: AcademicPricing
+    url: https://libraries.acm.org/subscriptions-access/academic/dl-pricing
+  - type: OpenAccess
+    url: https://dl.acm.org/openaccess
+  - type: TermsOfService
+    url: https://www.acm.org/publications/policies/copyright-policy
+  - type: PrivacyPolicy
+    url: https://www.acm.org/about-acm/privacy-policy
+  - type: Blog
+    url: https://cacm.acm.org/
+  - type: TrainingResources
+    url: https://libraries.acm.org/training-resources
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/association-for-computing-machinery
+  - type: Twitter
+    url: https://twitter.com/TheOfficialACM
+  - type: Support
+    url: https://dl.acm.org/contact
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
