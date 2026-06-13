@@ -1,0 +1,9 @@
+{
+  "aid": "acm",
+  "name": "ACM Digital Library",
+  "blogUrl": "https://cacm.acm.org/",
+  "rssUrl": "https://cacm.acm.org/feed/",
+  "lastFetched": "2026-06-13",
+  "fetchStatus": "blocked-403",
+  "posts": []
+}

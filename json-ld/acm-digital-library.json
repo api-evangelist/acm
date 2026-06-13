@@ -1,0 +1,94 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "ACM Digital Library",
+  "alternateName": "Association for Computing Machinery Digital Library",
+  "url": "https://dl.acm.org/",
+  "logo": "https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg",
+  "description": "The ACM Digital Library is the world's most comprehensive collection of full-text articles and bibliographic literature covering computing and information technology. Published by the Association for Computing Machinery (ACM), it provides access to journals, conference proceedings, magazines, newsletters, and technical reports spanning the complete history of ACM publications. As of January 2026, the ACM Digital Library is fully open access.",
+  "sameAs": [
+    "https://www.linkedin.com/company/association-for-computing-machinery",
+    "https://twitter.com/TheOfficialACM"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "url": "https://dl.acm.org/contact",
+    "contactType": "customer support"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "ACM Digital Library Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "name": "Open Access",
+        "url": "https://dl.acm.org/openaccess",
+        "description": "Free basic access to the full ACM Digital Library corpus of computing research."
+      },
+      {
+        "@type": "Offer",
+        "name": "Academic Subscription",
+        "url": "https://libraries.acm.org/subscriptions-access/academic/dl-pricing",
+        "description": "Institutional subscription for academic libraries with full access and analytics."
+      },
+      {
+        "@type": "Offer",
+        "name": "Corporate Subscription",
+        "url": "https://libraries.acm.org/subscriptions-access/corporate-pricing",
+        "description": "Corporate subscription tier for professional access and bulk download capabilities."
+      },
+      {
+        "@type": "Offer",
+        "name": "Government Subscription",
+        "url": "https://libraries.acm.org/subscriptions-access/government/dl-pricing",
+        "description": "Government subscription pricing for public sector institutions."
+      }
+    ]
+  },
+  "potentialAction": [
+    {
+      "@type": "SearchAction",
+      "name": "ACM Digital Library Search API",
+      "description": "Programmatic querying of computing literature across ACM's full publication corpus.",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://dl.acm.org/action/doSearch?query={search_term_string}",
+        "actionAccessibilityRequirement": {
+          "@type": "ActionAccessSpecification",
+          "category": "RequiresSubscription",
+          "availabilityStarts": "2000-01-01"
+        }
+      },
+      "query-input": "required name=search_term_string"
+    },
+    {
+      "@type": "ReadAction",
+      "name": "ACM Content Retrieval via DOI",
+      "description": "Retrieve individual publications via persistent DOI-based URLs.",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://dl.acm.org/doi/{doi}",
+        "encodingType": "application/html"
+      }
+    }
+  ],
+  "publishingPrinciples": "https://www.acm.org/publications/policies/copyright-policy",
+  "privacyPolicy": "https://www.acm.org/about-acm/privacy-policy",
+  "subjectOf": {
+    "@type": "WebSite",
+    "name": "ACM Digital Library Blog (CACM)",
+    "url": "https://cacm.acm.org/"
+  },
+  "knowsAbout": [
+    "Computing",
+    "Information Technology",
+    "Journals",
+    "Conference Proceedings",
+    "Bibliographic Records",
+    "Citations",
+    "Open Access",
+    "Scholarly Publications",
+    "Research",
+    "DOI"
+  ]
+}
