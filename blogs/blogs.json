@@ -5,5 +5,14 @@
   "rssUrl": "https://cacm.acm.org/feed/",
   "lastFetched": "2026-06-13",
   "fetchStatus": "blocked-403",
-  "posts": []
+  "posts": [],
+  "repo": "acm",
+  "feeds": [
+    {
+      "source": "https://www.acm.org/about-acm/privacy-policy",
+      "error": "HTTPError"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-06-14T20:42:17Z"
 }
