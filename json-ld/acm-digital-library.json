@@ -4,7 +4,7 @@
   "name": "ACM Digital Library",
   "alternateName": "Association for Computing Machinery Digital Library",
   "url": "https://dl.acm.org/",
-  "logo": "https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg",
+  "logo": "https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg",
   "description": "The ACM Digital Library is the world's most comprehensive collection of full-text articles and bibliographic literature covering computing and information technology. Published by the Association for Computing Machinery (ACM), it provides access to journals, conference proceedings, magazines, newsletters, and technical reports spanning the complete history of ACM publications. As of January 2026, the ACM Digital Library is fully open access.",
   "sameAs": [
     "https://www.linkedin.com/company/association-for-computing-machinery",
