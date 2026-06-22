@@ -1,18 +1,15 @@
 {
-  "aid": "acm",
-  "name": "ACM Digital Library",
-  "blogUrl": "https://cacm.acm.org/",
-  "rssUrl": "https://cacm.acm.org/feed/",
-  "lastFetched": "2026-06-13",
-  "fetchStatus": "blocked-403",
-  "posts": [],
   "repo": "acm",
+  "name": "ACM Digital Library",
   "feeds": [
     {
-      "source": "https://www.acm.org/about-acm/privacy-policy",
-      "error": "HTTPError"
+      "source": "https://cacm.acm.org/",
+      "feed_url": "https://cacm.acm.org/feed/",
+      "title": "Communications of the ACM",
+      "saved": 0,
+      "note": "All requests to cacm.acm.org return HTTP 403 (Cloudflare bot protection): feed, alternate feed paths (/rss/, /feed.xml, /atom.xml, /index.xml, /rss.xml), and the HTML homepage were all blocked."
     }
   ],
-  "post_count": 0,
-  "fetched": "2026-06-14T20:42:17Z"
+  "fetched": "2026-06-21T17:00:00Z",
+  "post_count": 0
 }
