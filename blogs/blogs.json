@@ -4,12 +4,10 @@
   "feeds": [
     {
       "source": "https://cacm.acm.org/",
-      "feed_url": "https://cacm.acm.org/feed/",
-      "title": "Communications of the ACM",
       "saved": 0,
-      "note": "All requests to cacm.acm.org return HTTP 403 (Cloudflare bot protection): feed, alternate feed paths (/rss/, /feed.xml, /atom.xml, /index.xml, /rss.xml), and the HTML homepage were all blocked."
+      "error": "403 Forbidden on listing and feed"
     }
   ],
-  "fetched": "2026-06-21T17:00:00Z",
+  "fetched": "2026-06-27T12:21:03Z",
   "post_count": 0
 }
