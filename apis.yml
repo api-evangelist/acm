@@ -115,6 +115,10 @@ apis:
       - Scholarly
 
 common:
+  - type: VulnerabilityDisclosure
+    url: security/acm-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/acm-domain-security.yml
   - type: Website
     url: https://dl.acm.org/
   - type: Documentation
