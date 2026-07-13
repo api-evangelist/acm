@@ -3,11 +3,10 @@
   "name": "ACM Digital Library",
   "feeds": [
     {
-      "source": "https://cacm.acm.org/",
-      "saved": 0,
-      "error": "403 Forbidden on listing and feed"
+      "source": "https://www.acm.org/about-acm/privacy-policy",
+      "error": "HTTPError"
     }
   ],
-  "fetched": "2026-06-27T12:21:03Z",
+  "fetched": "2026-07-11T11:50:51Z",
   "post_count": 0
 }
