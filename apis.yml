@@ -95,6 +95,15 @@ apis:
       - Articles
       - Content
       - DOI
+      - Full Text
+      - Metadata
+      - Open Access
+      - Publications
+      - Retrieval
+    tags_raw:
+      - Articles
+      - Content
+      - DOI
       - Full-Text
       - Metadata
       - Open Access
