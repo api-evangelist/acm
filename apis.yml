@@ -67,7 +67,6 @@ apis:
       magazines, and the broader ACM Guide to Computing Literature. Institutional or ACM member authentication
       unlocks access to full-text content beyond open-access articles.
     humanURL: https://dl.acm.org/search/
-    baseURL: https://dl.acm.org
     properties:
       - type: Documentation
         url: https://dl.acm.org/search/
@@ -94,7 +93,6 @@ apis:
       The endpoint supports retrieval of article abstracts, author information, affiliation data, citation
       counts, and full-text PDF downloads where permitted.
     humanURL: https://dl.acm.org/
-    baseURL: https://dl.acm.org
     properties:
       - type: Documentation
         url: https://libraries.acm.org/digital-library/platform-and-features
@@ -131,7 +129,6 @@ apis:
       results. BibTeX exports are compatible with reference managers including Mendeley and Zotero.
       Premium subscribers have access to enhanced citation tools and bulk export capabilities.
     humanURL: https://libraries.acm.org/training-resources/new-dl-features/citation-functions
-    baseURL: https://dl.acm.org
     properties:
       - type: Documentation
         url: https://libraries.acm.org/training-resources/new-dl-features/citation-functions
