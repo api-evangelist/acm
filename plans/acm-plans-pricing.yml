@@ -138,3 +138,27 @@ plans:
           - Institutional profile integration
           - Collaboration features
           - Text and data mining (research/educational use)
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - free
+  - subscription
+  units: []
+  plans:
+  - name: Basic (Open Access)
+    access: free
+    model: free
+    model_how: derived
+    units:
+    - other
+    periods:
+    - month
+  - name: Digital Library Premium
+    access: paid
+    model: subscription
+    model_how: derived
+    units:
+    - other
+    periods:
+    - year
