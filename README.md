@@ -64,33 +64,110 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-ACM Digital Library is the world's most comprehensive collection of full-text articles and bibliographic literature covering computing and information technology. Published by the Association for Computing Machinery (ACM), it provides access to journals, conference proceedings, magazines, newsletters, and technical reports spanning the complete history of ACM publications.
+The ACM Digital Library is the world's most comprehensive collection of full-text articles and bibliographic literature covering computing and information technology. Published by the Association for Computing Machinery (ACM), it provides access to journals, conference proceedings, magazines, newsletters, and technical reports spanning the complete history of ACM publications. As of January 2026, the ACM Digital Library is fully open access, offering free basic access to its entire corpus of computing research. Programmatic access is available through web-based search endpoints, DOI-based content retrieval, citation export (BibTeX, EndNoteL, ACM Ref), and Premium tier bulk download and research analytics capabilities. The library also provides the ACM Guide to Computing Literature, a comprehensive bibliographic database extending beyond ACM publications to cover the broader computing literature.
 
-As of January 2026, the ACM Digital Library is fully open access, offering free basic access to its entire corpus of computing research.
+**Areas:** Academic · Bibliographic Records · Citations · Computing · Conference Proceedings · DOI · Digital Library · Journals · Metadata · Open Access · Publications · Research
 
-**Human URL:** [https://dl.acm.org/](https://dl.acm.org/)
+## ACM Digital Library on APIs.io
 
-## APIs
+Everything profiled for ACM Digital Library is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/acm/](https://apis.io/providers/acm/)** — or go straight to one of the APIs or properties below.
 
-- **ACM Digital Library Search API** — Search computing literature via the doSearch endpoint with full-text query parameters and pagination.
-- **ACM Digital Library Content Retrieval API** — Retrieve individual publications, articles, and conference papers via DOI-based URLs.
-- **ACM Digital Library Citation Export API** — Export citations in BibTeX, EndNote, and ACM Reference formats for individual articles or bulk search results.
+### APIs (3)
 
-## Access
+- [ACM Digital Library Search API](https://apis.io/apis/acm/acm-search-api/) — The ACM Digital Library search endpoint allows programmatic querying of computing literature across ACM's full publication corpus. Queries are issued…
+- [ACM Digital Library Content Retrieval API](https://apis.io/apis/acm/acm-content-retrieval-api/) — Individual publications, conference papers, and journal articles in the ACM Digital Library are accessible via persistent DOI-based URLs at…
+- [ACM Digital Library Citation Export API](https://apis.io/apis/acm/acm-citation-export-api/) — The ACM Digital Library provides citation export functionality supporting BibTeX, EndNote, and ACM Reference format downloads for individual articles and…
 
-- **Basic (Free):** Open-access articles, bibliographic metadata, basic search, citation export.
-- **Premium:** AI-assisted search, bulk downloads, research analytics, citation tools, institutional features.
+### Published properties
 
-## Pricing
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- Academic: $6,000–$95,000/year (tiered by publishing activity)
-- Government: $30,675/year (single site)
-- Corporate: Custom pricing based on revenue and staff
+#### Security (2)
 
-## Links
+Authentication, trust centre, and vulnerability disclosure.
 
-- [Digital Library Platform and Features](https://libraries.acm.org/digital-library/platform-and-features)
-- [Subscriptions and Access](https://libraries.acm.org/subscriptions-access)
-- [Authentication](https://libraries.acm.org/subscriptions-access/authentication)
-- [Open Access](https://dl.acm.org/openaccess)
-- [Training Resources](https://libraries.acm.org/training-resources)
+- [Acm Domain Security](https://apis.io/security/acm/acm-domain-security/)
+- [Acm Vulnerability Disclosure](https://apis.io/security/acm/acm-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Acm Plans Pricing](https://apis.io/plans/acm/acm-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Acm Rate Limits](https://apis.io/rate-limits/acm/acm-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Acm Finops](https://apis.io/finops/acm/acm-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://dl.acm.org/)
+- [Documentation](https://libraries.acm.org/digital-library/platform-and-features)
+- [Pricing](https://libraries.acm.org/subscriptions-access)
+- [Support](https://dl.acm.org/contact)
+- [Blog](https://cacm.acm.org/)
+- [Terms of service](https://www.acm.org/publications/policies/copyright-policy)
+- [Privacy policy](https://www.acm.org/about-acm/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 21.4** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 62.5 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 28.6 |
+| Access clarity | 36.8 |
+
+**Agent readiness 3.1** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 25.5** — Education & Research
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/acm/](https://apis.io/providers/acm/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for ACM Digital Library: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/acm/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
